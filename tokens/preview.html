@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cirkular Origin — Token preview</title>
+<link rel="stylesheet" href="./index.css">
+<style>
+  body {
+    background: var(--co-forest-900);
+    color: var(--co-white);
+    font-family: var(--co-font-sans);
+    margin: 0;
+    padding: var(--co-space-12);
+    line-height: var(--co-leading-body);
+  }
+  h1 { font-size: var(--co-size-h1); font-weight: 800; letter-spacing: -0.02em; margin: 0 0 var(--co-space-2); }
+  h2 { font-size: var(--co-size-h3); font-weight: 600; margin: var(--co-space-12) 0 var(--co-space-4); }
+  .eyebrow { color: var(--co-lime); text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; font-weight: 600; }
+  .grid { display: grid; gap: var(--co-space-4); }
+  .colors { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+  .swatch { background: var(--co-forest-800); border-radius: var(--co-radius-lg); padding: var(--co-space-4); border: var(--co-border-hairline-dark); }
+  .chip { width: 100%; height: 80px; border-radius: var(--co-radius-md); margin-bottom: var(--co-space-3); }
+  .swatch code { font-family: var(--co-font-mono, monospace); font-size: 12px; color: rgba(255,255,255,0.7); }
+  .swatch strong { display: block; margin-bottom: 2px; }
+  .type-row { padding: var(--co-space-4) 0; border-bottom: var(--co-border-hairline-dark); }
+  .btns { display: flex; gap: var(--co-space-3); flex-wrap: wrap; }
+  button {
+    font-family: var(--co-font-sans);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    padding: 12px 22px;
+    border-radius: var(--co-radius-pill);
+    transition: transform var(--co-duration-hover) var(--co-ease-out), filter var(--co-duration-hover) var(--co-ease-out);
+  }
+  button:active { transform: scale(var(--co-press-scale)); }
+  .btn-primary { background: var(--co-lime); color: var(--co-forest-900); }
+  .btn-primary:hover { filter: brightness(1.06); }
+  .btn-primary:focus { box-shadow: var(--co-glow-lime); outline: none; }
+  .btn-secondary { background: transparent; color: var(--co-white); border: 1px solid rgba(255,255,255,0.28); }
+  .btn-ghost { background: rgba(255,255,255,0.06); color: var(--co-white); }
+  .btn-danger { background: var(--co-danger); color: var(--co-white); }
+  .pills { display: flex; gap: var(--co-space-2); flex-wrap: wrap; }
+  .pill { padding: 6px 12px; border-radius: var(--co-radius-pill); font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+  .pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; }
+  .pill-success { background: rgba(107,217,110,0.14); color: var(--co-success); }
+  .pill-success::before { background: var(--co-success); }
+  .pill-warning { background: rgba(255,179,71,0.14); color: var(--co-warning); }
+  .pill-warning::before { background: var(--co-warning); }
+  .pill-danger { background: rgba(255,92,92,0.14); color: var(--co-danger); }
+  .pill-danger::before { background: var(--co-danger); }
+  .pill-brand { background: var(--co-lime); color: var(--co-forest-900); }
+  .pill-brand::before { background: var(--co-forest-900); }
+  .gradient-spiral { height: 120px; border-radius: var(--co-radius-xl); background: var(--co-gradient-spiral); }
+  .number { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; font-size: 32px; font-weight: 700; color: var(--co-lime); }
+</style>
+</head>
+<body>
+  <span class="eyebrow">Design system</span>
+  <h1>Cirkular Origin tokens</h1>
+  <p style="color: rgba(255,255,255,0.7); max-width: 640px;">Vista previa interactiva de los tokens. Abrir <code>tokens/preview.html</code> directamente en navegador.</p>
+
+  <h2>Colores</h2>
+  <div class="grid colors">
+    <div class="swatch"><div class="chip" style="background:#1A2B2D"></div><strong>Forest 900</strong><code>#1A2B2D</code></div>
+    <div class="swatch"><div class="chip" style="background:#23393B"></div><strong>Forest 800</strong><code>#23393B</code></div>
+    <div class="swatch"><div class="chip" style="background:#C7FF00"></div><strong style="color:#1A2B2D">Lime</strong><code style="color:rgba(26,43,45,0.7)">#C7FF00</code></div>
+    <div class="swatch"><div class="chip" style="background:#05C0CA"></div><strong>Teal</strong><code>#05C0CA</code></div>
+    <div class="swatch"><div class="chip" style="background:#7A00FF"></div><strong>Purple</strong><code>#7A00FF</code></div>
+    <div class="swatch"><div class="chip" style="background:#F4F1EA"></div><strong style="color:#1A2B2D">Cream</strong><code style="color:rgba(26,43,45,0.7)">#F4F1EA</code></div>
+  </div>
+
+  <h2>Gradiente Spiral</h2>
+  <div class="gradient-spiral"></div>
+
+  <h2>Tipografía</h2>
+  <div>
+    <div class="type-row" style="font-size:88px;font-weight:800;letter-spacing:-0.02em;line-height:1.05">Display 88</div>
+    <div class="type-row" style="font-size:64px;font-weight:800;letter-spacing:-0.02em">H1 64</div>
+    <div class="type-row" style="font-size:48px;font-weight:700;letter-spacing:-0.01em">H2 48</div>
+    <div class="type-row" style="font-size:36px;font-weight:600">H3 36</div>
+    <div class="type-row" style="font-size:16px;line-height:1.65">Body 16 — Coffee that pays its own way home. Fund the regenerative practices of smallholder producers.</div>
+    <div class="type-row"><span class="eyebrow">Eyebrow 12 lime</span></div>
+  </div>
+
+  <h2>Botones</h2>
+  <div class="btns">
+    <button class="btn-primary">Fund this origin</button>
+    <button class="btn-secondary">Browse origins</button>
+    <button class="btn-ghost">Ghost</button>
+    <button class="btn-danger">Delete</button>
+  </div>
+
+  <h2>Pills</h2>
+  <div class="pills">
+    <span class="pill pill-success">Funded</span>
+    <span class="pill pill-warning">Pending review</span>
+    <span class="pill pill-danger">Action required</span>
+    <span class="pill pill-brand">Cirkular verified</span>
+  </div>
+
+  <h2>Numéricas tabulares</h2>
+  <div class="number">$1,240,000 · 1.2 tCO₂e · +12.4%</div>
+</body>
+</html>

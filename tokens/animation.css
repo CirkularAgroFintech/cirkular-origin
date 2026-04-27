@@ -1,0 +1,25 @@
+:root {
+  --co-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --co-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --co-duration-hover: 140ms;
+  --co-duration-component: 220ms;
+  --co-duration-reveal: 420ms;
+
+  --co-press-scale: 0.98;
+  --co-press-scale-cta: 0.97;
+  --co-press-duration: 80ms;
+  --co-press-duration-cta: 60ms;
+
+  --co-loader-duration: 1400ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --co-duration-hover: 0ms;
+    --co-duration-component: 0ms;
+    --co-duration-reveal: 0ms;
+    --co-press-duration: 0ms;
+    --co-press-duration-cta: 0ms;
+  }
+}

@@ -1,0 +1,108 @@
+:root {
+  --co-font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --co-font-serif: "Fraunces", Georgia, serif;
+  --co-font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --co-size-display: 88px;
+  --co-size-h1: 64px;
+  --co-size-h2: 48px;
+  --co-size-h3: 36px;
+  --co-size-h4: 28px;
+  --co-size-body: 16px;
+  --co-size-body-sm: 14px;
+  --co-size-eyebrow: 12px;
+  --co-size-caption: 12px;
+
+  --co-weight-regular: 400;
+  --co-weight-semibold: 600;
+  --co-weight-bold: 700;
+  --co-weight-extrabold: 800;
+
+  --co-leading-display: 1.05;
+  --co-leading-heading: 1.15;
+  --co-leading-body: 1.65;
+  --co-leading-body-sm: 1.5;
+  --co-leading-caption: 1.4;
+
+  --co-tracking-display: -0.02em;
+  --co-tracking-heading: -0.01em;
+  --co-tracking-eyebrow: 0.12em;
+}
+
+.co-display {
+  font-family: var(--co-font-sans);
+  font-size: var(--co-size-display);
+  font-weight: var(--co-weight-extrabold);
+  letter-spacing: var(--co-tracking-display);
+  line-height: var(--co-leading-display);
+}
+
+.co-h1 {
+  font-family: var(--co-font-sans);
+  font-size: var(--co-size-h1);
+  font-weight: var(--co-weight-extrabold);
+  letter-spacing: var(--co-tracking-display);
+  line-height: var(--co-leading-heading);
+}
+
+.co-h2 {
+  font-family: var(--co-font-sans);
+  font-size: var(--co-size-h2);
+  font-weight: var(--co-weight-bold);
+  letter-spacing: var(--co-tracking-heading);
+  line-height: var(--co-leading-heading);
+}
+
+.co-h3 {
+  font-family: var(--co-font-sans);
+  font-size: var(--co-size-h3);
+  font-weight: var(--co-weight-semibold);
+  letter-spacing: var(--co-tracking-heading);
+  line-height: var(--co-leading-heading);
+}
+
+.co-h4 {
+  font-family: var(--co-font-sans);
+  font-size: var(--co-size-h4);
+  font-weight: var(--co-weight-semibold);
+}
+
+.co-body {
+  font-family: var(--co-font-sans);
+  font-size: var(--co-size-body);
+  font-weight: var(--co-weight-regular);
+  line-height: var(--co-leading-body);
+}
+
+.co-body-sm {
+  font-family: var(--co-font-sans);
+  font-size: var(--co-size-body-sm);
+  font-weight: var(--co-weight-regular);
+  line-height: var(--co-leading-body-sm);
+}
+
+.co-eyebrow {
+  font-family: var(--co-font-sans);
+  font-size: var(--co-size-eyebrow);
+  font-weight: var(--co-weight-semibold);
+  letter-spacing: var(--co-tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--co-lime);
+}
+
+.co-caption {
+  font-family: var(--co-font-sans);
+  font-size: var(--co-size-caption);
+  font-weight: var(--co-weight-regular);
+  line-height: var(--co-leading-caption);
+}
+
+.co-tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+.co-serif-italic {
+  font-family: var(--co-font-serif);
+  font-style: italic;
+}

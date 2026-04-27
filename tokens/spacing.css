@@ -1,0 +1,37 @@
+:root {
+  --co-space-1: 4px;
+  --co-space-2: 8px;
+  --co-space-3: 12px;
+  --co-space-4: 16px;
+  --co-space-5: 20px;
+  --co-space-6: 24px;
+  --co-space-8: 32px;
+  --co-space-10: 40px;
+  --co-space-12: 48px;
+  --co-space-16: 64px;
+  --co-space-20: 80px;
+  --co-space-24: 96px;
+
+  --co-section-padding: 96px;
+  --co-section-padding-mobile: 56px;
+  --co-card-padding: 24px;
+  --co-card-padding-hero: 32px;
+  --co-gutter: 48px;
+  --co-gutter-mobile: 24px;
+
+  --co-radius-xs: 6px;
+  --co-radius-sm: 10px;
+  --co-radius-md: 14px;
+  --co-radius-lg: 20px;
+  --co-radius-xl: 28px;
+  --co-radius-2xl: 36px;
+  --co-radius-pill: 999px;
+
+  --co-max-content-dashboard: 1200px;
+  --co-max-content-editorial: 960px;
+
+  --co-topbar-height: 64px;
+  --co-tabbar-height: 80px;
+
+  --co-touch-min: 44px;
+}

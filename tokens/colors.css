@@ -1,0 +1,34 @@
+:root {
+  --co-forest-900: #1A2B2D;
+  --co-forest-800: #23393B;
+  --co-lime: #C7FF00;
+  --co-teal: #05C0CA;
+  --co-purple: #7A00FF;
+  --co-white: #FFFFFF;
+  --co-cream: #F4F1EA;
+
+  --co-forest-950: #131614;
+  --co-forest-700: #2E4A4D;
+  --co-forest-600: #3C5C5F;
+  --co-forest-500: #547073;
+
+  --co-success: #6BD96E;
+  --co-warning: #FFB347;
+  --co-danger: #FF5C5C;
+  --co-info: #05C0CA;
+
+  --co-gradient-spiral: linear-gradient(160deg, #7A00FF 0%, #4A35E0 35%, #05C0CA 65%, #C7FF00 100%);
+  --co-gradient-lime: linear-gradient(140deg, #C7FF00 0%, #9FE600 100%);
+  --co-gradient-forest: linear-gradient(180deg, #23393B 0%, #1A2B2D 100%);
+
+  --co-divider-on-dark: rgba(255, 255, 255, 0.10);
+  --co-divider-on-light: rgba(35, 57, 59, 0.12);
+  --co-surface-hover-dark: rgba(255, 255, 255, 0.03);
+  --co-input-bg: rgba(255, 255, 255, 0.04);
+  --co-input-border: rgba(255, 255, 255, 0.10);
+  --co-placeholder: rgba(255, 255, 255, 0.35);
+  --co-tag-bg: rgba(255, 255, 255, 0.06);
+
+  --co-glow-lime: 0 0 0 1px rgba(199, 255, 0, 0.35), 0 10px 30px rgba(199, 255, 0, 0.18);
+  --co-modal-scrim: rgba(15, 25, 26, 0.72);
+}

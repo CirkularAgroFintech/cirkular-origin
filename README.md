@@ -7,6 +7,7 @@ Repositorio central del **sistema de diseño y activos de marca** de Cirkular Or
 | Carpeta / archivo | Descripción |
 |---|---|
 | [`DESIGN.md`](./DESIGN.md) | Sistema de diseño completo: colores, tipografía, spacing, componentes, voz de marca |
+| [`tokens/`](./tokens/) | Tokens en CSS (`.css`) y W3C Design Tokens (`.json`) — listos para importar en código |
 | [`brand/`](./brand/) | PDFs originales de marca (2022): identidad y cultura |
 | [`assets/logos/`](./assets/logos/) | Logos oficiales de Cirkular Origin (PNG en variantes landscape/portrait, dark/bright, color/grayscale) |
 | [`assets/logos-source/`](./assets/logos-source/) | Variantes históricas y alternativas de logo |
